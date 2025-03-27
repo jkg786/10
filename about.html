@@ -3,136 +3,248 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Toolsnew</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="css/style.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>About Us - MultiTools Hub</title>
+    <script src="js/layout.js"></script>
 </head>
 <body>
-    <!-- Announcement Bar -->
-    <div class="announcement-bar">
-        <div class="announcement-content">
-            <span class="announcement-text">🚀 Your Trust Our Aim! 💖 | 🌟 100% Free Tools Collection 🛠️ | 🎉 Premium Quality Results 💎</span>
-        </div>
-    </div>
-
-    <!-- Header -->
-    <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <main>
+        <div class="about-container">
             <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/logo.png" alt="MultiTools Hub Logo" height="40">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                    <div class="d-flex align-items-center">
-                        <!-- Language Selector -->
-                        <div id="languageSelector"></div>
-                        <!-- Theme Toggle -->
-                        <button class="btn btn-outline-primary me-2" id="themeToggle">
-                            <i class="fas fa-moon"></i>
-                        </button>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="about-header text-center">
+                            <h1 class="about-title">About MultiTools Hub</h1>
+                            <p class="about-subtitle">Your Trusted Partner for Online Tools</p>
+                        </div>
+
+                        <div class="about-content">
+                            <div class="about-section">
+                                <h2>Our Mission</h2>
+                                <p>At MultiTools Hub, we're dedicated to providing high-quality, free online tools to make your work easier and more efficient. Our platform brings together a comprehensive collection of utilities designed to enhance productivity and simplify digital tasks.</p>
+                            </div>
+
+                            <div class="about-section">
+                                <h2>What We Offer</h2>
+                                <div class="features-grid">
+                                    <div class="feature-card">
+                                        <i class="fas fa-tools"></i>
+                                        <h3>100+ Tools</h3>
+                                        <p>A comprehensive collection of tools for various needs</p>
+                                    </div>
+                                    <div class="feature-card">
+                                        <i class="fas fa-bolt"></i>
+                                        <h3>Fast & Reliable</h3>
+                                        <p>Quick processing and reliable results every time</p>
+                                    </div>
+                                    <div class="feature-card">
+                                        <i class="fas fa-lock"></i>
+                                        <h3>Secure</h3>
+                                        <p>Your data security is our top priority</p>
+                                    </div>
+                                    <div class="feature-card">
+                                        <i class="fas fa-heart"></i>
+                                        <h3>User Friendly</h3>
+                                        <p>Intuitive interface for the best user experience</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="about-section">
+                                <h2>Why Choose Us</h2>
+                                <div class="benefits-list">
+                                    <div class="benefit-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <div class="benefit-content">
+                                            <h4>Free Forever</h4>
+                                            <p>All our tools are completely free to use, no hidden charges</p>
+                                        </div>
+                                    </div>
+                                    <div class="benefit-item">
+                                        <i class="fas fa-clock"></i>
+                                        <div class="benefit-content">
+                                            <h4>24/7 Availability</h4>
+                                            <p>Access our tools anytime, anywhere</p>
+                                        </div>
+                                    </div>
+                                    <div class="benefit-item">
+                                        <i class="fas fa-sync"></i>
+                                        <div class="benefit-content">
+                                            <h4>Regular Updates</h4>
+                                            <p>We constantly update and add new tools</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="about-section text-center">
+                                <h2>Ready to Get Started?</h2>
+                                <p>Explore our collection of tools and enhance your productivity today!</p>
+                                <a href="./index.html" class="cta-button">
+                                    <i class="fas fa-rocket"></i>
+                                    Explore Tools
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Main Content -->
-    <main class="container my-5">
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <h1 class="text-center mb-4">About Toolsnew</h1>
-                
-                <div class="about-section mb-5">
-                    <h2>Our Mission</h2>
-                    <p>At Toolsnew, we're dedicated to providing a comprehensive collection of free, high-quality online tools to help you with various tasks. Our mission is to make these tools accessible to everyone, regardless of their technical expertise.</p>
-                </div>
-
-                <div class="about-section mb-5">
-                    <h2>What We Offer</h2>
-                    <p>We provide over 100 different tools across various categories:</p>
-                    <ul>
-                        <li>Image Tools (converters, resizers, optimizers)</li>
-                        <li>Text Tools (counters, converters, formatters)</li>
-                        <li>SEO Tools (analyzers, keyword tools)</li>
-                        <li>Developer Tools (encoders, formatters)</li>
-                        <li>Calculator Tools (unit converters, scientific calculators)</li>
-                    </ul>
-                </div>
-
-                <div class="about-section mb-5">
-                    <h2>Our Commitment</h2>
-                    <p>We are committed to:</p>
-                    <ul>
-                        <li>Providing 100% free tools without hidden costs</li>
-                        <li>Maintaining high-quality, reliable functionality</li>
-                        <li>Ensuring user privacy and data security</li>
-                        <li>Regularly updating and improving our tools</li>
-                        <li>Listening to user feedback and suggestions</li>
-                    </ul>
-                </div>
-
-                <div class="about-section">
-                    <h2>Get Started</h2>
-                    <p>Ready to explore our tools? Visit our <a href="index.html">homepage</a> to browse our complete collection of tools. Each tool is designed to be intuitive and easy to use, with clear instructions and helpful features.</p>
                 </div>
             </div>
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer mt-5 py-4 bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h5>About Us</h5>
-                    <p>Your trusted source for free online tools and utilities.</p>
-                </div>
-                <div class="col-md-4">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                        <li><a href="terms.html">Terms of Service</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h5>Connect With Us</h5>
-                    <div class="social-links">
-                        <a href="#" class="me-2"><i class="fab fa-facebook"></i></a> 
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="text-center">
-                <p class="mb-0">&copy; 2025 Toolsnew. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <style data-page-specific>
+        .about-container {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, var(--bg-color) 0%, rgba(var(--primary-color-rgb), 0.1) 100%);
+        }
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
-    <script src="js/main.js"></script>
-    <script src="js/language.js"></script>
+        .about-header {
+            margin-bottom: 4rem;
+        }
+
+        .about-title {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .about-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-color);
+            opacity: 0.8;
+        }
+
+        .about-section {
+            margin-bottom: 4rem;
+        }
+
+        .about-section h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            color: var(--text-color);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-card i {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-color);
+        }
+
+        .feature-card p {
+            color: var(--text-color);
+            opacity: 0.8;
+        }
+
+        .benefits-list {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            background: var(--card-bg);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .benefit-item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .benefit-item i {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+
+        .benefit-content h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+        }
+
+        .benefit-content p {
+            color: var(--text-color);
+            opacity: 0.8;
+            margin: 0;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-top: 2rem;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .about-title {
+                font-size: 2.5rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-container {
+                padding: 3rem 0;
+            }
+
+            .feature-card,
+            .benefit-item {
+                padding: 1.5rem;
+            }
+        }
+    </style>
 </body>
-</html> 
+</html>
