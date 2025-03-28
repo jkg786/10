@@ -3,169 +3,297 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToolNew - Free Online Tools</title>
+    <title>Toolsnew - Free Online Tools Collection</title>
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Include Header -->
-    <div id="header-placeholder"></div>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="announcement-content">
+            <span class="announcement-text">🚀 Your Trust Our Aim! 💖 | 🌟 100% Free Tools Collection 🛠️ | 🎉 Premium Quality Results 💎</span>
+        </div>
+    </div>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Search Section -->
-        <section class="search-section">
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 mx-auto text-center">
-                        <h1 class="main-title">Find the Perfect Tool for Your Task</h1>
-                        <div class="search-container">
-                            <div class="search-wrapper">
-                                <input type="text" class="hero-search" placeholder="Search from 100+ tools...">
-                                <button class="search-btn">
-                                    <i class="fas fa-search"></i>
-                                </button>
-                            </div>
-                            <div class="search-suggestions"></div>
-                        </div>
-                    </div>
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="Toolsnew Logo" height="40">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">🏠 Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">ℹ️ About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">📧 Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
+        </nav>
+    </header>
 
-        <!-- Most Used Tools -->
-        <section class="most-used-section">
-            <div class="container">
-                <h2 class="section-title">Most Used Tools</h2>
-                <div class="row">
-                    <div class="col-lg-9">
-                        <div class="most-used-tools">
-                            <div class="tool-card">
-                                <img src="images/tools/image-converter.png" alt="Image Converter">
-                                <h3>Image Converter</h3>
-                                <p>Convert images between formats</p>
-                            </div>
-                            <!-- Add more tool cards -->
-                        </div>
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- Search Section -->
+        <section class="search-section">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="search-box">
+                        <input type="text" id="toolSearch" class="form-control" placeholder="🔍 Search for tools...">
                     </div>
-                    <div class="col-lg-3">
-                        <!-- Ad Banner -->
-                        <div class="ad-banner">
-                            <div class="ad-placeholder">
-                                Advertisement
-                            </div>
-                        </div>
-                    </div>
+                    <div id="searchResults" class="search-results mt-3"></div>
                 </div>
             </div>
         </section>
 
         <!-- Tool Categories -->
-        <section class="tool-categories">
-            <div class="container">
-                <h2 class="section-title">Tool Categories</h2>
-                <div class="row">
-                    <div class="col-lg-9">
-                        <div class="categories-grid">
-                            <!-- Image Tools -->
-                            <div class="category-card">
-                                <div class="category-header" data-bs-toggle="collapse" data-bs-target="#imageTools">
-                                    <img src="images/categories/image-tools.png" alt="Image Tools">
-                                    <h3>Image Tools</h3>
-                                    <i class="fas fa-chevron-down"></i>
-                                </div>
-                                <div id="imageTools" class="collapse category-content">
-                                    <ul>
-                                        <li><a href="#"><img src="images/tools/converter.png" alt=""> Image Converter</a></li>
-                                        <li><a href="#"><img src="images/tools/compressor.png" alt=""> Image Compressor</a></li>
-                                        <li><a href="#"><img src="images/tools/resizer.png" alt=""> Image Resizer</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- Text Tools -->
-                            <div class="category-card">
-                                <div class="category-header" data-bs-toggle="collapse" data-bs-target="#textTools">
-                                    <img src="images/categories/text-tools.png" alt="Text Tools">
-                                    <h3>Text Tools</h3>
-                                    <i class="fas fa-chevron-down"></i>
-                                </div>
-                                <div id="textTools" class="collapse category-content">
-                                    <ul>
-                                        <li><a href="#"><img src="images/tools/text-editor.png" alt=""> Text Editor</a></li>
-                                        <li><a href="#"><img src="images/tools/word-counter.png" alt=""> Word Counter</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- Developer Tools -->
-                            <div class="category-card">
-                                <div class="category-header" data-bs-toggle="collapse" data-bs-target="#devTools">
-                                    <img src="images/categories/dev-tools.png" alt="Developer Tools">
-                                    <h3>Developer Tools</h3>
-                                    <i class="fas fa-chevron-down"></i>
-                                </div>
-                                <div id="devTools" class="collapse category-content">
-                                    <ul>
-                                        <li><a href="#"><img src="images/tools/code-formatter.png" alt=""> Code Formatter</a></li>
-                                        <li><a href="#"><img src="images/tools/minifier.png" alt=""> Code Minifier</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- SEO Tools -->
-                            <div class="category-card">
-                                <div class="category-header" data-bs-toggle="collapse" data-bs-target="#seoTools">
-                                    <img src="images/categories/seo-tools.png" alt="SEO Tools">
-                                    <h3>SEO Tools</h3>
-                                    <i class="fas fa-chevron-down"></i>
-                                </div>
-                                <div id="seoTools" class="collapse category-content">
-                                    <ul>
-                                        <li><a href="#"><img src="images/tools/keyword-research.png" alt=""> Keyword Research</a></li>
-                                        <li><a href="#"><img src="images/tools/meta-tags.png" alt=""> Meta Tags Generator</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- Security Tools -->
-                            <div class="category-card">
-                                <div class="category-header" data-bs-toggle="collapse" data-bs-target="#securityTools">
-                                    <img src="images/categories/security-tools.png" alt="Security Tools">
-                                    <h3>Security & Encryption</h3>
-                                    <i class="fas fa-chevron-down"></i>
-                                </div>
-                                <div id="securityTools" class="collapse category-content">
-                                    <ul>
-                                        <li><a href="#"><img src="images/tools/password-gen.png" alt=""> Password Generator</a></li>
-                                        <li><a href="#"><img src="images/tools/hash-gen.png" alt=""> Hash Generator</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- Social Media Tools -->
-                            <div class="category-card">
-                                <div class="category-header" data-bs-toggle="collapse" data-bs-target="#socialTools">
-                                    <img src="images/categories/social-tools.png" alt="Social Media Tools">
-                                    <h3>Social Media Tools</h3>
-                                    <i class="fas fa-chevron-down"></i>
-                                </div>
-                                <div id="socialTools" class="collapse category-content">
-                                    <ul>
-                                        <li><a href="#"><img src="images/tools/thumbnail-maker.png" alt=""> Thumbnail Maker</a></li>
-                                        <li><a href="#"><img src="images/tools/post-designer.png" alt=""> Post Designer</a></li>
-                                    </ul>
-                                </div>
-                            </div>
+        <section class="tool-categories mt-5">
+            <div class="row">
+                <!-- Image Tools -->
+                <div class="col-lg-4 mb-4">
+                    <div class="tool-category-card">
+                        <div class="tool-category-icon">
+                            <img src="images/categories/image-tools.svg" alt="Image Tools" class="category-logo">
+                        </div>
+                        <h3>🖼️ Image Tools</h3>
+                        <div class="tool-list">
+                            <a href="tools/image-to-png.html" class="tool-item">
+                                <img src="images/tools/image-to-png.svg" alt="Image to PNG" class="tool-icon">
+                                <span>Image to PNG Converter</span>
+                            </a>
+                            <a href="tools/image-to-jpg.html" class="tool-item">
+                                <img src="images/tools/image-to-jpg.svg" alt="Image to JPG" class="tool-icon">
+                                <span>Image to JPG Converter</span>
+                            </a>
+                            <a href="tools/image-resizer.html" class="tool-item">
+                                <img src="images/tools/image-resizer.svg" alt="Image Resizer" class="tool-icon">
+                                <span>Image Resizer</span>
+                            </a>
+                            <a href="tools/image-compressor.html" class="tool-item">
+                                <img src="images/tools/image-compressor.svg" alt="Image Compressor" class="tool-icon">
+                                <span>Image Compressor</span>
+                            </a>
+                            <a href="tools/image-cropper.html" class="tool-item">
+                                <img src="images/tools/image-cropper.svg" alt="Image Cropper" class="tool-icon">
+                                <span>Image Cropper</span>
+                            </a>
+                            <a href="tools/image-to-base64.html" class="tool-item">
+                                <img src="images/tools/image-to-base64.svg" alt="Image to Base64" class="tool-icon">
+                                <span>Convert Image to Base64</span>
+                            </a>
+                            <a href="tools/webp-to-png.html" class="tool-item">
+                                <img src="images/tools/webp-to-png.svg" alt="WebP to PNG" class="tool-icon">
+                                <span>Convert WebP to PNG</span>
+                            </a>
+                            <a href="tools/gif-maker.html" class="tool-item">
+                                <img src="images/tools/gif-maker.svg" alt="GIF Maker" class="tool-icon">
+                                <span>GIF Maker</span>
+                            </a>
+                            <a href="tools/qr-code-generator.html" class="tool-item">
+                                <img src="images/tools/qr-code.svg" alt="QR Code Generator" class="tool-icon">
+                                <span>QR Code Generator</span>
+                            </a>
+                            <a href="tools/screenshot-to-pdf.html" class="tool-item">
+                                <img src="images/tools/screenshot-to-pdf.svg" alt="Screenshot to PDF" class="tool-icon">
+                                <span>Screenshot to PDF Converter</span>
+                            </a>
                         </div>
                     </div>
-                    <div class="col-lg-3">
-                        <!-- Sidebar Ad Banner -->
-                        <div class="ad-banner sticky-top">
-                            <div class="ad-placeholder">
-                                Advertisement
-                            </div>
+                </div>
+
+                <!-- SEO Tools -->
+                <div class="col-lg-4 mb-4">
+                    <div class="tool-category-card">
+                        <div class="tool-category-icon">
+                            <img src="images/categories/seo-tools.svg" alt="SEO Tools" class="category-logo">
+                        </div>
+                        <h3>🔍 SEO Tools</h3>
+                        <div class="tool-list">
+                            <a href="tools/meta-tag-generator.html" class="tool-item">
+                                <img src="images/tools/meta-tag.svg" alt="Meta Tag Generator" class="tool-icon">
+                                <span>Meta Tag Generator</span>
+                            </a>
+                            <a href="tools/keyword-density.html" class="tool-item">
+                                <img src="images/tools/keyword-density.svg" alt="Keyword Density" class="tool-icon">
+                                <span>Keyword Density Checker</span>
+                            </a>
+                            <a href="tools/sitemap-generator.html" class="tool-item">
+                                <img src="images/tools/sitemap.svg" alt="Sitemap Generator" class="tool-icon">
+                                <span>Sitemap Generator</span>
+                            </a>
+                            <a href="tools/robots-txt.html" class="tool-item">
+                                <img src="images/tools/robots-txt.svg" alt="Robots.txt Generator" class="tool-icon">
+                                <span>Robots.txt Generator</span>
+                            </a>
+                            <a href="tools/google-index.html" class="tool-item">
+                                <img src="images/tools/google-index.svg" alt="Google Index" class="tool-icon">
+                                <span>Google Index Checker</span>
+                            </a>
+                            <a href="tools/domain-authority.html" class="tool-item">
+                                <img src="images/tools/domain-authority.svg" alt="Domain Authority" class="tool-icon">
+                                <span>Domain Authority Checker</span>
+                            </a>
+                            <a href="tools/backlink-checker.html" class="tool-item">
+                                <img src="images/tools/backlink.svg" alt="Backlink Checker" class="tool-icon">
+                                <span>Backlink Checker</span>
+                            </a>
+                            <a href="tools/page-speed.html" class="tool-item">
+                                <img src="images/tools/page-speed.svg" alt="Page Speed" class="tool-icon">
+                                <span>Page Speed Checker</span>
+                            </a>
+                            <a href="tools/xml-validator.html" class="tool-item">
+                                <img src="images/tools/xml-validator.svg" alt="XML Validator" class="tool-icon">
+                                <span>XML Sitemap Validator</span>
+                            </a>
+                            <a href="tools/mobile-friendly.html" class="tool-item">
+                                <img src="images/tools/mobile-friendly.svg" alt="Mobile Friendly" class="tool-icon">
+                                <span>Mobile-Friendly Test</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Tools -->
+                <div class="col-lg-4 mb-4">
+                    <div class="tool-category-card">
+                        <div class="tool-category-icon">
+                            <img src="images/categories/text-tools.svg" alt="Text Tools" class="category-logo">
+                        </div>
+                        <h3>📝 Text Tools</h3>
+                        <div class="tool-list">
+                            <a href="tools/word-counter.html" class="tool-item">
+                                <img src="images/tools/word-counter.svg" alt="Word Counter" class="tool-icon">
+                                <span>Word Counter</span>
+                            </a>
+                            <a href="tools/character-counter.html" class="tool-item">
+                                <img src="images/tools/character-counter.svg" alt="Character Counter" class="tool-icon">
+                                <span>Character Counter</span>
+                            </a>
+                            <a href="tools/case-converter.html" class="tool-item">
+                                <img src="images/tools/case-converter.svg" alt="Case Converter" class="tool-icon">
+                                <span>Case Converter</span>
+                            </a>
+                            <a href="tools/plagiarism-checker.html" class="tool-item">
+                                <img src="images/tools/plagiarism.svg" alt="Plagiarism Checker" class="tool-icon">
+                                <span>Plagiarism Checker</span>
+                            </a>
+                            <a href="tools/grammar-checker.html" class="tool-item">
+                                <img src="images/tools/grammar.svg" alt="Grammar Checker" class="tool-icon">
+                                <span>Grammar Checker</span>
+                            </a>
+                            <a href="tools/text-to-speech.html" class="tool-item">
+                                <img src="images/tools/text-to-speech.svg" alt="Text to Speech" class="tool-icon">
+                                <span>Text-to-Speech</span>
+                            </a>
+                            <a href="tools/speech-to-text.html" class="tool-item">
+                                <img src="images/tools/speech-to-text.svg" alt="Speech to Text" class="tool-icon">
+                                <span>Speech-to-Text</span>
+                            </a>
+                            <a href="tools/url-encoder.html" class="tool-item">
+                                <img src="images/tools/url-encoder.svg" alt="URL Encoder" class="tool-icon">
+                                <span>URL Encoder & Decoder</span>
+                            </a>
+                            <a href="tools/fancy-text.html" class="tool-item">
+                                <img src="images/tools/fancy-text.svg" alt="Fancy Text" class="tool-icon">
+                                <span>Fancy Text Generator</span>
+                            </a>
+                            <a href="tools/random-text.html" class="tool-item">
+                                <img src="images/tools/random-text.svg" alt="Random Text" class="tool-icon">
+                                <span>Random Text Generator</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Continue with other categories... -->
+                <!-- Developer Tools -->
+                <div class="col-lg-4 mb-4">
+                    <div class="tool-category-card">
+                        <div class="tool-category-icon">
+                            <img src="images/categories/developer-tools.svg" alt="Developer Tools" class="category-logo">
+                        </div>
+                        <h3>💻 Developer Tools</h3>
+                        <div class="tool-list">
+                            <!-- Add developer tools items -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Math & Calculators -->
+                <div class="col-lg-4 mb-4">
+                    <div class="tool-category-card">
+                        <div class="tool-category-icon">
+                            <img src="images/categories/calculator.svg" alt="Math & Calculators" class="category-logo">
+                        </div>
+                        <h3>🔢 Math & Calculators</h3>
+                        <div class="tool-list">
+                            <!-- Add calculator tools items -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Unit Converters -->
+                <div class="col-lg-4 mb-4">
+                    <div class="tool-category-card">
+                        <div class="tool-category-icon">
+                            <img src="images/categories/unit-converter.svg" alt="Unit Converters" class="category-logo">
+                        </div>
+                        <h3>📏 Unit Converters</h3>
+                        <div class="tool-list">
+                            <!-- Add unit converter items -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Security & Encryption Tools -->
+                <div class="col-lg-4 mb-4">
+                    <div class="tool-category-card">
+                        <div class="tool-category-icon">
+                            <img src="images/categories/security.svg" alt="Security Tools" class="category-logo">
+                        </div>
+                        <h3>🔒 Security & Encryption Tools</h3>
+                        <div class="tool-list">
+                            <!-- Add security tools items -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Media Tools -->
+                <div class="col-lg-4 mb-4">
+                    <div class="tool-category-card">
+                        <div class="tool-category-icon">
+                            <img src="images/categories/social-media.svg" alt="Social Media Tools" class="category-logo">
+                        </div>
+                        <h3>📱 Social Media Tools</h3>
+                        <div class="tool-list">
+                            <!-- Add social media tools items -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Miscellaneous Tools -->
+                <div class="col-lg-4 mb-4">
+                    <div class="tool-category-card">
+                        <div class="tool-category-icon">
+                            <img src="images/categories/misc.svg" alt="Miscellaneous Tools" class="category-logo">
+                        </div>
+                        <h3>🎯 Miscellaneous Tools</h3>
+                        <div class="tool-list">
+                            <!-- Add miscellaneous tools items -->
                         </div>
                     </div>
                 </div>
@@ -173,83 +301,44 @@
         </section>
     </main>
 
-    <!-- Include Footer -->
-    <div id="footer-placeholder"></div>
-
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
-    <script>
-        // Load Header and Footer
-        fetch('components/header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header-placeholder').innerHTML = data;
-            });
-
-        fetch('components/footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer-placeholder').innerHTML = data;
-            });
-
-        // Search Functionality
-        const searchInput = document.querySelector('.hero-search');
-        const suggestionsContainer = document.querySelector('.search-suggestions');
-
-        searchInput.addEventListener('input', (e) => {
-            const query = e.target.value.toLowerCase();
-            if (query) {
-                // Simulate search suggestions
-                const suggestions = getAllTools()
-                    .filter(tool => tool.name.toLowerCase().includes(query) || 
-                                  tool.category.toLowerCase().includes(query))
-                    .slice(0, 5);
-                showSuggestions(suggestions);
-            } else {
-                suggestionsContainer.innerHTML = '';
-            }
-        });
-
-        function getAllTools() {
-            // This would typically come from your database
-            return [
-                { name: 'Image Converter', category: 'Image Tools', icon: 'images/tools/converter.png' },
-                { name: 'Image Compressor', category: 'Image Tools', icon: 'images/tools/compressor.png' },
-                { name: 'Code Formatter', category: 'Developer Tools', icon: 'images/tools/code-formatter.png' },
-                // Add more tools
-            ];
-        }
-
-        function showSuggestions(suggestions) {
-            suggestionsContainer.innerHTML = suggestions
-                .map(tool => `
-                    <div class="suggestion-item">
-                        <img src="${tool.icon}" alt="${tool.name}">
-                        <div class="suggestion-info">
-                            <span class="tool-name">${tool.name}</span>
-                            <span class="tool-category">${tool.category}</span>
-                        </div>
+    <!-- Footer -->
+    <footer class="footer mt-5 py-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>ℹ️ About Us</h5>
+                    <p>Your trusted source for free online tools and utilities.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>🔗 Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">🏠 Home</a></li>
+                        <li><a href="about.html">ℹ️ About</a></li>
+                        <li><a href="contact.html">📧 Contact</a></li>
+                        <li><a href="privacy-policy.html">🔒 Privacy Policy</a></li>
+                        <li><a href="terms.html">📜 Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>🤝 Connect With Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="me-2"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
                     </div>
-                `)
-                .join('');
-        }
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 Toolsnew. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-        // Track Most Used Tools
-        function trackToolUsage(toolId) {
-            let usageData = JSON.parse(localStorage.getItem('toolUsage')) || {};
-            usageData[toolId] = (usageData[toolId] || 0) + 1;
-            localStorage.setItem('toolUsage', JSON.stringify(usageData));
-            updateMostUsedTools();
-        }
-
-        function updateMostUsedTools() {
-            const usageData = JSON.parse(localStorage.getItem('toolUsage')) || {};
-            const sortedTools = Object.entries(usageData)
-                .sort(([,a], [,b]) => b - a)
-                .slice(0, 5);
-            // Update UI with most used tools
-        }
-    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script src="js/search.js"></script>
 </body>
 </html> 
