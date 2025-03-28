@@ -3,244 +3,253 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toolsnew - Your One-Stop Tool Collection</title>
-    <!-- Bootstrap CSS -->
+    <title>ToolNew - Free Online Tools</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Announcement Bar -->
-    <div class="announcement-bar">
-        <div class="announcement-content">
-            <span class="announcement-text">🚀 Your Trust Our Aim! 💖 | 🌟 100% Free Tools Collection 🛠️ | 🎉 Premium Quality Results 💎</span>
-        </div>
-    </div>
-
-    <!-- Header -->
-    <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/logo.png" alt="MultiTools Hub Logo" height="40">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="hero-background"></div>
-        <div class="floating-icons">
-            <div class="icon" data-speed="0.5">🖼️</div>
-            <div class="icon" data-speed="0.8">📊</div>
-            <div class="icon" data-speed="0.3">🔒</div>
-            <div class="icon" data-speed="0.6">⚡</div>
-            <div class="icon" data-speed="0.7">🎯</div>
-        </div>
-        <div class="container">
-            <div class="hero-content text-center">
-                <h1 class="hero-title">The Gateway to Genius</h1>
-                <p class="hero-subtitle">Transform Your Work with AI-Powered Tools</p>
-                <div class="free-badge">
-                    <span class="badge-text">100% Free Forever</span>
-                    <div class="confetti-container"></div>
-                </div>
-                <!-- AI-Powered Search Bar -->
-                <div class="search-container">
-                    <div class="search-wrapper">
-                        <input type="text" class="hero-search" placeholder="Search from 100+ tools...">
-                        <div class="search-buttons">
-                            <button class="search-btn" id="searchBtn">
-                                <i class="fas fa-search"></i>
-                            </button>
-                            <button class="voice-search-btn" id="voiceSearch">
-                                <i class="fas fa-microphone"></i>
-                            </button>
-                        </div>
-                        <div class="ai-suggestions"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Tool Categories Grid -->
-    <section class="tool-categories-section">
-        <div class="container">
-            <h2 class="section-title text-center">Toolbox Wonderland</h2>
-            <div class="categories-grid">
-                <!-- Image Tools Category -->
-                <div class="category-card glass-card">
-                    <div class="category-preview">
-                        <div class="preview-carousel">
-                            <img src="images/tools/image-resize-preview.gif" alt="Image Resizer">
-                            <img src="images/tools/image-compress-preview.gif" alt="Image Compressor">
-                        </div>
-                    </div>
-                    <h3>Image Tools</h3>
-                    <p>Transform, compress, and enhance your images</p>
-                </div>
-                <!-- Add more category cards -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Add this after the Tool Categories section -->
-    <section class="ads-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="ad-card">
-                        <img src="images/ads/ad1.jpg" alt="Premium Tools" class="img-fluid mb-3">
-                        <h4>Premium Image Tools</h4>
-                        <p>Get access to advanced features and faster processing</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="ad-card">
-                        <img src="images/ads/ad2.jpg" alt="PDF Tools" class="img-fluid mb-3">
-                        <h4>PDF Pro Tools</h4>
-                        <p>Convert, edit, and manage PDF files like a pro</p>
-                        <a href="#" class="btn btn-primary">Try Now</a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="ad-card">
-                        <img src="images/ads/ad3.jpg" alt="Developer Tools" class="img-fluid mb-3">
-                        <h4>Developer Suite</h4>
-                        <p>Complete toolkit for web developers</p>
-                        <a href="#" class="btn btn-primary">Explore</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Tool Playground Section -->
-    <section class="tool-playground">
-        <div class="container">
-            <h2 class="section-title text-center">Tool Playground</h2>
-            <p class="section-description text-center">Test multiple tools simultaneously in our split-screen workspace</p>
-            <div class="playground-container">
-                <div class="playground-left">
-                    <!-- Tool 1 workspace -->
-                </div>
-                <div class="playground-right">
-                    <!-- Tool 2 workspace -->
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Include Header -->
+    <div id="header-placeholder"></div>
 
     <!-- Main Content -->
-    <main class="container my-5">
+    <main>
         <!-- Search Section -->
-        <div class="search-section mb-5">
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <div class="input-group">
-                        <input type="text" class="form-control" id="toolSearch" placeholder="Search for tools...">
-                        <button class="btn btn-primary" id="voiceSearch">
-                            <i class="fas fa-microphone"></i>
-                        </button>
+        <section class="search-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h1 class="main-title">Find the Perfect Tool for Your Task</h1>
+                        <div class="search-container">
+                            <div class="search-wrapper">
+                                <input type="text" class="hero-search" placeholder="Search from 100+ tools...">
+                                <button class="search-btn">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                            <div class="search-suggestions"></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- Most Used Tools -->
+        <section class="most-used-section">
+            <div class="container">
+                <h2 class="section-title">Most Used Tools</h2>
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="most-used-tools">
+                            <div class="tool-card">
+                                <img src="images/tools/image-converter.png" alt="Image Converter">
+                                <h3>Image Converter</h3>
+                                <p>Convert images between formats</p>
+                            </div>
+                            <!-- Add more tool cards -->
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <!-- Ad Banner -->
+                        <div class="ad-banner">
+                            <div class="ad-placeholder">
+                                Advertisement
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Tool Categories -->
-        <div class="tool-categories">
-            <h2 class="text-center mb-4">Tool Categories</h2>
-            <div class="row g-4" id="toolCategories">
-                <!-- Categories will be dynamically loaded here -->
-            </div>
-        </div>
+        <section class="tool-categories">
+            <div class="container">
+                <h2 class="section-title">Tool Categories</h2>
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="categories-grid">
+                            <!-- Image Tools -->
+                            <div class="category-card">
+                                <div class="category-header" data-bs-toggle="collapse" data-bs-target="#imageTools">
+                                    <img src="images/categories/image-tools.png" alt="Image Tools">
+                                    <h3>Image Tools</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div id="imageTools" class="collapse category-content">
+                                    <ul>
+                                        <li><a href="#"><img src="images/tools/converter.png" alt=""> Image Converter</a></li>
+                                        <li><a href="#"><img src="images/tools/compressor.png" alt=""> Image Compressor</a></li>
+                                        <li><a href="#"><img src="images/tools/resizer.png" alt=""> Image Resizer</a></li>
+                                    </ul>
+                                </div>
+                            </div>
 
-        <!-- Featured Tools -->
-        <div class="featured-tools mt-5">
-            <h2 class="text-center mb-4">Featured Tools</h2>
-            <div class="row g-4" id="featuredTools">
-                <!-- Featured tools will be dynamically loaded here -->
-            </div>
-        </div>
-    </main>
+                            <!-- Text Tools -->
+                            <div class="category-card">
+                                <div class="category-header" data-bs-toggle="collapse" data-bs-target="#textTools">
+                                    <img src="images/categories/text-tools.png" alt="Text Tools">
+                                    <h3>Text Tools</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div id="textTools" class="collapse category-content">
+                                    <ul>
+                                        <li><a href="#"><img src="images/tools/text-editor.png" alt=""> Text Editor</a></li>
+                                        <li><a href="#"><img src="images/tools/word-counter.png" alt=""> Word Counter</a></li>
+                                    </ul>
+                                </div>
+                            </div>
 
-    <!-- Footer -->
-    <footer class="footer mt-5 py-4 bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <h5>About Us</h5>
-                    <p>Your trusted source for free online tools and utilities.</p>
-                    <div class="social-links">
-                        <a href="#" class="me-2"><i class="fab fa-facebook"></i></a>
+                            <!-- Developer Tools -->
+                            <div class="category-card">
+                                <div class="category-header" data-bs-toggle="collapse" data-bs-target="#devTools">
+                                    <img src="images/categories/dev-tools.png" alt="Developer Tools">
+                                    <h3>Developer Tools</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div id="devTools" class="collapse category-content">
+                                    <ul>
+                                        <li><a href="#"><img src="images/tools/code-formatter.png" alt=""> Code Formatter</a></li>
+                                        <li><a href="#"><img src="images/tools/minifier.png" alt=""> Code Minifier</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- SEO Tools -->
+                            <div class="category-card">
+                                <div class="category-header" data-bs-toggle="collapse" data-bs-target="#seoTools">
+                                    <img src="images/categories/seo-tools.png" alt="SEO Tools">
+                                    <h3>SEO Tools</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div id="seoTools" class="collapse category-content">
+                                    <ul>
+                                        <li><a href="#"><img src="images/tools/keyword-research.png" alt=""> Keyword Research</a></li>
+                                        <li><a href="#"><img src="images/tools/meta-tags.png" alt=""> Meta Tags Generator</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Security Tools -->
+                            <div class="category-card">
+                                <div class="category-header" data-bs-toggle="collapse" data-bs-target="#securityTools">
+                                    <img src="images/categories/security-tools.png" alt="Security Tools">
+                                    <h3>Security & Encryption</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div id="securityTools" class="collapse category-content">
+                                    <ul>
+                                        <li><a href="#"><img src="images/tools/password-gen.png" alt=""> Password Generator</a></li>
+                                        <li><a href="#"><img src="images/tools/hash-gen.png" alt=""> Hash Generator</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Social Media Tools -->
+                            <div class="category-card">
+                                <div class="category-header" data-bs-toggle="collapse" data-bs-target="#socialTools">
+                                    <img src="images/categories/social-tools.png" alt="Social Media Tools">
+                                    <h3>Social Media Tools</h3>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div id="socialTools" class="collapse category-content">
+                                    <ul>
+                                        <li><a href="#"><img src="images/tools/thumbnail-maker.png" alt=""> Thumbnail Maker</a></li>
+                                        <li><a href="#"><img src="images/tools/post-designer.png" alt=""> Post Designer</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <!-- Sidebar Ad Banner -->
+                        <div class="ad-banner sticky-top">
+                            <div class="ad-placeholder">
+                                Advertisement
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                        <li><a href="terms.html">Terms of Service</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h5>Popular Tools</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="/tools/image">Image Tools</a></li>
-                        <li><a href="/tools/calculators">Calculators</a></li>
-                        <li><a href="/tools/seo">SEO Tools</a></li>
-                        <li><a href="/tools/developer">Developer Tools</a></li>
-                        <li><a href="/tools/text">Text Tools</a></li>
-                        <li><a href="/tools/converters">Converters</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h5>Newsletter</h5>
-                    <p class="mb-3">Subscribe to our newsletter for updates and new tools!</p>
-                    <form class="newsletter-form">
-                        <div class="input-group mb-3">
-                            <input type="email" class="form-control" placeholder="Your email" aria-label="Your email">
-                            <button class="btn btn-primary" type="submit">Subscribe</button>
-                        </div>
-                    </form>
-                </div>
             </div>
-            <hr>
-            <div class="text-center">
-                <p class="mb-0">&copy; 2025 Toolsnew. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+        </section>
+    </main>
 
-    <!-- Bootstrap JS -->
+    <!-- Include Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
     <script src="js/main.js"></script>
-    <script src="js/language.js"></script>
-    <script src="js/tool-categories.js"></script>
-    <script src="js/voice-search.js"></script>
+    <script>
+        // Load Header and Footer
+        fetch('components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        fetch('components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+
+        // Search Functionality
+        const searchInput = document.querySelector('.hero-search');
+        const suggestionsContainer = document.querySelector('.search-suggestions');
+
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            if (query) {
+                // Simulate search suggestions
+                const suggestions = getAllTools()
+                    .filter(tool => tool.name.toLowerCase().includes(query) || 
+                                  tool.category.toLowerCase().includes(query))
+                    .slice(0, 5);
+                showSuggestions(suggestions);
+            } else {
+                suggestionsContainer.innerHTML = '';
+            }
+        });
+
+        function getAllTools() {
+            // This would typically come from your database
+            return [
+                { name: 'Image Converter', category: 'Image Tools', icon: 'images/tools/converter.png' },
+                { name: 'Image Compressor', category: 'Image Tools', icon: 'images/tools/compressor.png' },
+                { name: 'Code Formatter', category: 'Developer Tools', icon: 'images/tools/code-formatter.png' },
+                // Add more tools
+            ];
+        }
+
+        function showSuggestions(suggestions) {
+            suggestionsContainer.innerHTML = suggestions
+                .map(tool => `
+                    <div class="suggestion-item">
+                        <img src="${tool.icon}" alt="${tool.name}">
+                        <div class="suggestion-info">
+                            <span class="tool-name">${tool.name}</span>
+                            <span class="tool-category">${tool.category}</span>
+                        </div>
+                    </div>
+                `)
+                .join('');
+        }
+
+        // Track Most Used Tools
+        function trackToolUsage(toolId) {
+            let usageData = JSON.parse(localStorage.getItem('toolUsage')) || {};
+            usageData[toolId] = (usageData[toolId] || 0) + 1;
+            localStorage.setItem('toolUsage', JSON.stringify(usageData));
+            updateMostUsedTools();
+        }
+
+        function updateMostUsedTools() {
+            const usageData = JSON.parse(localStorage.getItem('toolUsage')) || {};
+            const sortedTools = Object.entries(usageData)
+                .sort(([,a], [,b]) => b - a)
+                .slice(0, 5);
+            // Update UI with most used tools
+        }
+    </script>
 </body>
 </html> 
