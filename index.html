@@ -45,14 +45,121 @@
                         <!-- Language Selector -->
                         <div id="languageSelector"></div>
                         <!-- Theme Toggle -->
-                        <button class="btn btn-outline-primary me-2" id="themeToggle">
+                        <button class="btn me-2" id="themeToggle" aria-label="Switch theme">
                             <i class="fas fa-moon"></i>
+                            <span>Dark Mode</span>
                         </button>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-background"></div>
+        <div class="floating-icons">
+            <div class="icon" data-speed="0.5">🖼️</div>
+            <div class="icon" data-speed="0.8">📊</div>
+            <div class="icon" data-speed="0.3">🔒</div>
+            <div class="icon" data-speed="0.6">⚡</div>
+            <div class="icon" data-speed="0.7">🎯</div>
+        </div>
+        <div class="container">
+            <div class="hero-content text-center">
+                <h1 class="hero-title">The Gateway to Genius</h1>
+                <p class="hero-subtitle">Transform Your Work with AI-Powered Tools</p>
+                <div class="free-badge">
+                    <span class="badge-text">100% Free Forever</span>
+                    <div class="confetti-container"></div>
+                </div>
+                <!-- AI-Powered Search Bar -->
+                <div class="search-container">
+                    <div class="search-wrapper">
+                        <input type="text" class="hero-search" placeholder="Search from 100+ tools...">
+                        <div class="search-buttons">
+                            <button class="search-btn" id="searchBtn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                            <button class="voice-search-btn" id="voiceSearch">
+                                <i class="fas fa-microphone"></i>
+                            </button>
+                        </div>
+                        <div class="ai-suggestions"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tool Categories Grid -->
+    <section class="tool-categories-section">
+        <div class="container">
+            <h2 class="section-title text-center">Toolbox Wonderland</h2>
+            <div class="categories-grid">
+                <!-- Image Tools Category -->
+                <div class="category-card glass-card">
+                    <div class="category-preview">
+                        <div class="preview-carousel">
+                            <img src="images/tools/image-resize-preview.gif" alt="Image Resizer">
+                            <img src="images/tools/image-compress-preview.gif" alt="Image Compressor">
+                        </div>
+                    </div>
+                    <h3>Image Tools</h3>
+                    <p>Transform, compress, and enhance your images</p>
+                </div>
+                <!-- Add more category cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Add this after the Tool Categories section -->
+    <section class="ads-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="ad-card">
+                        <img src="images/ads/ad1.jpg" alt="Premium Tools" class="img-fluid mb-3">
+                        <h4>Premium Image Tools</h4>
+                        <p>Get access to advanced features and faster processing</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="ad-card">
+                        <img src="images/ads/ad2.jpg" alt="PDF Tools" class="img-fluid mb-3">
+                        <h4>PDF Pro Tools</h4>
+                        <p>Convert, edit, and manage PDF files like a pro</p>
+                        <a href="#" class="btn btn-primary">Try Now</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="ad-card">
+                        <img src="images/ads/ad3.jpg" alt="Developer Tools" class="img-fluid mb-3">
+                        <h4>Developer Suite</h4>
+                        <p>Complete toolkit for web developers</p>
+                        <a href="#" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tool Playground Section -->
+    <section class="tool-playground">
+        <div class="container">
+            <h2 class="section-title text-center">Tool Playground</h2>
+            <p class="section-description text-center">Test multiple tools simultaneously in our split-screen workspace</p>
+            <div class="playground-container">
+                <div class="playground-left">
+                    <!-- Tool 1 workspace -->
+                </div>
+                <div class="playground-right">
+                    <!-- Tool 2 workspace -->
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Main Content -->
     <main class="container my-5">
