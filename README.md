@@ -1,106 +1,137 @@
-# MultiTools Hub
+# ToolNew - Free Online Tools Collection
 
-A comprehensive collection of free online tools for various tasks, built with HTML, JavaScript, and Bootstrap.
+<div align="center">
+    <img src="images/logo.svg" alt="ToolNew Logo" width="120">
+    <h3>Your One-Stop Solution for Online Tools</h3>
+    <p>A modern, fast, and user-friendly collection of free online tools.</p>
+</div>
 
-## Features
+## 🌟 Features
 
 - 🎨 Modern and responsive design
-- 🌓 Dark/Light mode support
-- 🌐 Multi-language support
+- 🚀 Fast and efficient tools
 - 🔍 Advanced search functionality
 - 🎤 Voice search capability
 - 📱 Mobile-friendly interface
-- 🚀 Fast and efficient tools
 - 🔒 Privacy-focused
+- ⚡ No registration required
 
-## Tool Categories
+## 🛠️ Tool Categories
 
-1. Image Tools
-   - Image to PNG converter
-   - Image to JPG converter
-   - Image resizer
-   - Image optimizer
-   - And more...
+### 🖼️ Image Tools
+- Image Converter
+- Image Compressor
+- Image Resizer
 
-2. Text Tools
-   - Text to speech
-   - Word counter
-   - Case converter
-   - Text formatter
-   - And more...
+### 📝 Text Tools
+- Text Editor
+- Word Counter
+- Case Converter
 
-3. SEO Tools
-   - Keyword analyzer
-   - Meta tag generator
-   - Sitemap generator
-   - And more...
+### 💻 Developer Tools
+- Code Formatter
+- JSON Validator
+- Base64 Encoder/Decoder
 
-4. Developer Tools
-   - Code formatter
-   - JSON validator
-   - Base64 encoder/decoder
-   - And more...
+### 🔍 SEO Tools
+- Keyword Research
+- Meta Tags Generator
+- Sitemap Generator
 
-5. Calculator Tools
-   - Unit converter
-   - Scientific calculator
-   - Percentage calculator
-   - And more...
+### 🔐 Security Tools
+- Password Generator
+- Hash Generator
+- Encryption Tools
 
-## Getting Started
+### 📱 Social Media Tools
+- Thumbnail Maker
+- Post Designer
+- Social Card Generator
+
+## 🚀 Getting Started
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/multitools-hub.git
+   git clone https://github.com/yourusername/toolnew.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd multitools-hub
+   cd toolnew
    ```
 
 3. Open `index.html` in your web browser or use a local server.
 
-## Project Structure
+## 📁 Project Structure
 
 ```
-multitools-hub/
+toolnew/
 ├── index.html
 ├── about.html
+├── privacy.html
+├── terms.html
 ├── contact.html
+├── components/
+│   ├── header.html
+│   └── footer.html
 ├── css/
 │   └── style.css
 ├── js/
-│   ├── main.js
-│   ├── contact.js
-│   └── tools/
-│       └── image-to-png.js
-├── tools/
-│   └── image-to-png.html
-└── images/
-    └── logo.png
+│   └── main.js
+├── images/
+│   ├── logo.svg
+│   └── icons/
+└── tools/
+    ├── image/
+    ├── text/
+    └── dev/
 ```
 
-## Contributing
+## 🤝 Contributing
 
 1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
+2. Create your feature branch: `git checkout -b feature/AmazingFeature`
+3. Commit your changes: `git commit -m 'Add some AmazingFeature'`
+4. Push to the branch: `git push origin feature/AmazingFeature`
 5. Open a Pull Request
 
-## License
+## 📄 Legal
+
+- [Privacy Policy](privacy.html)
+- [Terms of Service](terms.html)
+- [Cookie Policy](cookies.html)
+- [Disclaimer](disclaimer.html)
+
+## 📞 Support
+
+- [FAQ](faq.html)
+- [Help Center](help.html)
+- [Contact Us](contact.html)
+- [Report Issues](report.html)
+
+## 📜 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
+## 🌟 Star History
 
-- Bootstrap for the UI framework
-- Font Awesome for icons
-- All contributors and users of the tools
+[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/toolnew&type=Date)](https://star-history.com/#yourusername/toolnew&Date)
 
-## Contact
+## 🙏 Acknowledgments
 
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter) - email@example.com
+- [Bootstrap](https://getbootstrap.com/) for the UI framework
+- [Font Awesome](https://fontawesome.com/) for icons
+- All contributors who help improve the tools
 
-Project Link: [https://github.com/yourusername/multitools-hub](https://github.com/yourusername/multitools-hub) 
+## 📧 Contact
+
+For any queries or suggestions, feel free to reach out:
+
+- Website: [https://toolnew.com](https://toolnew.com)
+- GitHub: [@yourusername](https://github.com/yourusername)
+- Email: contact@toolnew.com
+
+---
+<div align="center">
+    Made with ❤️ by the ToolNew Team
+</div> 

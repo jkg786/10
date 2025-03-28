@@ -13,147 +13,129 @@
     <!-- Include Header -->
     <div id="header-placeholder"></div>
 
-    <!-- Contact Hero Section -->
-    <section class="contact-hero">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <h1 class="contact-title">Get in Touch</h1>
-                    <p class="contact-subtitle">We'd love to hear from you!</p>
-                    <div class="contact-info">
-                        <div class="info-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>support@toolnew.com</span>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-clock"></i>
-                            <span>24/7 Support</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6" data-aos="fade-left">
-                    <div class="contact-form-container">
-                        <form id="contactForm" class="contact-form">
-                            <div class="mb-4">
-                                <label for="name" class="form-label">Your Name</label>
-                                <input type="text" class="form-control" id="name" required>
+    <!-- Main Content -->
+    <main>
+        <!-- Contact Hero Section -->
+        <section class="contact-hero">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h1 class="display-4">Get in Touch</h1>
+                        <p class="lead">We're here to help and answer any questions you might have.</p>
+                        <div class="contact-info mt-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-envelope fa-2x me-3 text-primary"></i>
+                                <div>
+                                    <h5 class="mb-0">Email Us</h5>
+                                    <p class="mb-0">contact@toolnew.com</p>
+                                </div>
                             </div>
-                            <div class="mb-4">
-                                <label for="email" class="form-label">Email Address</label>
-                                <input type="email" class="form-control" id="email" required>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-phone fa-2x me-3 text-primary"></i>
+                                <div>
+                                    <h5 class="mb-0">Call Us</h5>
+                                    <p class="mb-0">[Your Phone Number]</p>
+                                </div>
                             </div>
-                            <div class="mb-4">
-                                <label for="subject" class="form-label">Subject</label>
-                                <input type="text" class="form-control" id="subject" required>
-                            </div>
-                            <div class="mb-4">
-                                <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control" id="message" rows="5" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary submit-btn">
-                                <span class="btn-text">Send Message</span>
-                                <i class="fas fa-paper-plane"></i>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faq-section">
-        <div class="container">
-            <h2 class="section-title text-center" data-aos="fade-up">Frequently Asked Questions</h2>
-            <div class="row mt-5">
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="accordion" id="faqAccordion1">
-                        <div class="accordion-item">
-                            <h3 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                                    Are all tools really free?
-                                </button>
-                            </h3>
-                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion1">
-                                <div class="accordion-body">
-                                    Yes! All our tools are completely free to use. We believe in providing value to our users without any hidden costs.
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-map-marker-alt fa-2x me-3 text-primary"></i>
+                                <div>
+                                    <h5 class="mb-0">Visit Us</h5>
+                                    <p class="mb-0">[Your Address]</p>
                                 </div>
                             </div>
                         </div>
-                        <!-- Add more FAQ items -->
                     </div>
-                </div>
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="accordion" id="faqAccordion2">
-                        <!-- Add more FAQ items -->
+                    <div class="col-lg-6">
+                        <div class="contact-form-container">
+                            <form id="contactForm" class="p-4 bg-white rounded shadow">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Your Name</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control" id="subject" name="subject" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                        How do I use your tools?
+                                    </button>
+                                </h3>
+                                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Our tools are designed to be user-friendly. Simply navigate to the tool you want to use, follow the on-screen instructions, and you're good to go!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                        Are your tools free to use?
+                                    </button>
+                                </h3>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Yes, all our tools are completely free to use. We believe in providing quality tools accessible to everyone.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                        Is my data secure?
+                                    </button>
+                                </h3>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        We take data security seriously. All data processed through our tools is handled securely and we don't store any personal information.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Include Footer -->
     <div id="footer-placeholder"></div>
 
-    <!-- Success Message Template -->
-    <template id="successMessage">
-        <div class="success-message">
-            <i class="fas fa-check-circle"></i>
-            <span>Thank you for your message! We'll get back to you soon.</span>
-        </div>
-    </template>
-
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/main.js"></script>
     <script>
-        // Initialize AOS
-        AOS.init({
-            duration: 1000,
-            once: true
-        });
-
-        // Load Header and Footer
-        fetch('components/header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header-placeholder').innerHTML = data;
-            });
-
-        fetch('components/footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer-placeholder').innerHTML = data;
-            });
-
-        // Handle form submission
+        // Contact Form Submission Handler
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            
-            // Show loading state
-            const submitBtn = this.querySelector('.submit-btn');
-            const btnText = submitBtn.querySelector('.btn-text');
-            const originalText = btnText.textContent;
-            submitBtn.disabled = true;
-            btnText.textContent = 'Sending...';
-
-            // Simulate form submission
-            setTimeout(() => {
-                // Show success message
-                const template = document.getElementById('successMessage');
-                const successMessage = template.content.cloneNode(true);
-                document.body.appendChild(successMessage.querySelector('.success-message'));
-
-                // Reset form
-                this.reset();
-                submitBtn.disabled = false;
-                btnText.textContent = originalText;
-
-                // Remove success message after 5 seconds
-                setTimeout(() => {
-                    document.querySelector('.success-message').remove();
-                }, 5000);
-            }, 1500);
+            // Add your form submission logic here
+            alert('Thank you for your message. We will get back to you soon!');
+            this.reset();
         });
     </script>
 </body>
